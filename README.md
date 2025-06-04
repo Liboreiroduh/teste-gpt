@@ -1,28 +1,15 @@
-# teste-gpt
+# LED Panel Quote App + Teste GPT
 
-Projeto de exemplo para experimentos com GPT. Agora inclui uma estrutura
-inicial para um aplicativo de controle de painel de LED com banco de dados.
+Este repositório contém dois propósitos principais:
 
-## Estrutura
+1. Um aplicativo simples baseado em [Streamlit](https://streamlit.io/) para gerar orçamentos de painéis de LED com exportação em PDF.
+2. Um módulo de experimentos com GPT e uma estrutura CLI para controle de painel de LED com banco de dados.
 
-- `calculadora.py` - funcoes utilitarias de calculo usadas em exemplos e testes.
-- `ledpanel/` - modulo principal do painel de LED.
-- `database/` - camada simples de persistencia utilizando SQLite.
-- `cli.py` - ponto de entrada de linha de comando.
-- `docs/TAREFAS.md` - documento com divisao de tarefas para evolucao do projeto.
+---
 
-## Execucao
+## Como usar o app Streamlit
 
-Para executar comandos do painel de LED, instale as dependencias (apenas
-biblioteca padrao) e execute:
+1. Instale as dependências:
 
 ```bash
-python cli.py ligar
-python cli.py mensagem --texto "Ola" 
-```
-
-Os testes podem ser executados com:
-
-```bash
-pytest -q
-```
+pip install -r requirements.txt
