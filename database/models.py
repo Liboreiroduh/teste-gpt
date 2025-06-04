@@ -1,0 +1,15 @@
+"""Modelos simplificados para o banco de dados."""
+
+CREATE_TABLE_CONFIG = """\
+CREATE TABLE IF NOT EXISTS config (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    chave TEXT NOT NULL UNIQUE,
+    valor TEXT NOT NULL
+);"""
+
+CREATE_TABLE_LOG = """\
+CREATE TABLE IF NOT EXISTS log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    mensagem TEXT NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);"""
